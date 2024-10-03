@@ -1,0 +1,15 @@
+02.
+let arr=prompt("Enter the array elements:").split(',').map(Number);
+let result = moveEmptyBox(arr);
+function moveEmptyBox(box){
+    let m=box.filter(item=>item!==0);
+    let n =box.filter(item=>item==0);
+    let output = [...m,...n];
+    let count = n.length;
+
+    return{
+        updatedArray: output,
+        emptyBoxCount: count
+    };
+}
+console.log(result);

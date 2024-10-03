@@ -1,0 +1,14 @@
+03.
+let M = parseInt(prompt("Enter the value of M: "),10);
+let N = parseInt(prompt("Enter the value of N: "),10);
+let product = 1;
+if(M>N){
+    return("M is greater Than N Returning 1");
+}else{
+for(let i=M;i<N;i++){
+    if(i%2!==0){
+     product*=i;
+    }
+}
+console.log(product);
+}

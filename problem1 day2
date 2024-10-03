@@ -1,0 +1,16 @@
+01.
+let arr = prompt(Enter the array elements: ").split(').map(Number);
+let result=[];
+let N=arr.length;
+let zerocount = 0;
+for(let i=0;i<N;i++){
+if(arr[i]!==0){
+result.push(arr[i]);
+}
+else{
+zerocount++;
+}
+for(let i=0;i<zerocount;i++){
+result.push(0);
+}
+console.log(result);
